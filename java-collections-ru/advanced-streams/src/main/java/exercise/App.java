@@ -5,13 +5,6 @@ import java.util.Arrays;
 
 // BEGIN
 class App {
-//    public static void main(String[] args) throws IOException {
-//        Path configPath = Paths.get("src", "test", "resources", "fixtures", "s2.conf")
-//                        .toAbsolutePath().normalize();
-//        String configFromFile = Files.readString(configPath).trim();
-//        getForwardedVariables(configFromFile);
-//    }
-
     public static String getForwardedVariables(String config) {
         String[] configArr = config.split("\n");
         String result = Arrays.stream(configArr)
